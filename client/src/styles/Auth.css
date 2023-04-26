@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outer-box {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 40vh;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-string {
+  display: flex;
+  justify-content: center;
+}
+
+.lower-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration-field {
+  display: flex;
+}
+
+.registration-link {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.registration-link:hover {
+  background-color: black;
+  border-radius: 5px;
+  color: #b8860b;
+}
+
+.login-btn {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: black;
+  color: #b8860b;
+}

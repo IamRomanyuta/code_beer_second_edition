@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.type-list {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.list-item {
+  font-size: 24px;
+  margin-top: 7px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.list-item:hover {
+  background-color: black;
+  color: #b8860b;
+  cursor: pointer;
+}
+
+.list-item:active {
+  background-color: aqua;
+}
