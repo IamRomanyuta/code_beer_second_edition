@@ -13,7 +13,7 @@
 
 .left-side-nav {
   display: flex;
-  width: 50%;
+  width: 30%;
   float: left;
 }
 
@@ -31,39 +31,17 @@
 .right-side-nav {
   display: flex;
   flex-direction: row-reverse;
-  width: 50%;
+  width: 70%;
   float: right;
 }
 
-.basket {
+.nav-links {
   color: white;
   font-size: 30px;
   text-decoration: none;
   margin: 0px 10px;
 }
 
-.basket:hover {
-  color: #b8860b;
-}
-
-.login {
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-  margin: 0px 10px;
-}
-
-.login:hover {
-  color: #b8860b;
-}
-
-.profile {
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-  margin: 0px 10px;
-}
-
-.profile:hover {
+.nav-links:hover {
   color: #b8860b;
 }

@@ -24,7 +24,3 @@
   color: #b8860b;
   cursor: pointer;
 }
-
-.list-item:active {
-  background-color: aqua;
-}

@@ -10,6 +10,7 @@ import {
   LOGIN_ROUTE,
   REGISTRATION_ROUTE,
   SHOP_ROUTE,
+  PROFILE_ROUTE,
 } from "./utils/consts";
 
 export const authRoutes = [
@@ -20,6 +21,10 @@ export const authRoutes = [
   {
     path: BASKET_ROUTE,
     Component: Basket,
+  },
+  {
+    path: PROFILE_ROUTE,
+    Component: Admin,
   },
 ];
 

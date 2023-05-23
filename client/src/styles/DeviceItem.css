@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.device {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.left-side-item {
+  width: 20%;
+}
+.middle-side-item {
+  width: 60%;
+}
+.right-side-item {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.sort {
+  font-size: 25px;
+}
+.main-pic {
+  width: 200px;
+}

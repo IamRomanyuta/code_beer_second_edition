@@ -16,25 +16,25 @@ export default class DeviceStore {
     this._devices = [
       {
         id: 1,
-        name: "Zhiguli",
+        name: "Секрет Пивовара",
         rating: 5,
         img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
       },
       {
         id: 2,
-        name: "Zhiguli",
+        name: "Секрет Пивовара",
         rating: 5,
         img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
       },
       {
         id: 3,
-        name: "Zhiguli",
+        name: "Секрет Пивовара",
         rating: 5,
         img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
       },
       {
         id: 4,
-        name: "Zhiguli",
+        name: "Секрет Пивовара",
         rating: 5,
         img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
       },

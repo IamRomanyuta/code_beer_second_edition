@@ -4,11 +4,8 @@
   box-sizing: border-box;
 }
 
-.shop-main-window {
+.device-list {
   display: flex;
-}
-
-.beer-showcase {
-  display: flex;
+  flex-direction: column;
   width: 100%;
 }

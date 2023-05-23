@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-main-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-button {
+  border: 5px solid black;
+  margin: 50px 10px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.main-button:hover {
+  background-color: black;
+  color: #b8860b;
+}

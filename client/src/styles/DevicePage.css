@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.device-main-window {
+  display: flex;
+}
+
+.upper-side {
+  display: flex;
+  width: 95%;
+  margin: 20px;
+}
+
+.left-side {
+  width: 33%;
+}
+
+.lower-side {
+  display: flex;
+}
