@@ -3,6 +3,8 @@ import Auth from "./pages/Auth";
 import Basket from "./pages/Basket";
 import DevicePage from "./pages/DevicePage";
 import Shop from "./pages/Shop";
+import Profile from "./pages/Profile";
+
 import {
   ADMIN_ROUTE,
   BASKET_ROUTE,
@@ -24,7 +26,7 @@ export const authRoutes = [
   },
   {
     path: PROFILE_ROUTE,
-    Component: Admin,
+    Component: Profile,
   },
 ];
 

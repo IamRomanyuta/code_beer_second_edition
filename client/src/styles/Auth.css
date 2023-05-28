@@ -55,6 +55,7 @@
 }
 
 .login-btn {
+  height: 30px;
   margin-top: 10px;
   border-radius: 5px;
 }
