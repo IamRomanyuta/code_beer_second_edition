@@ -2,44 +2,14 @@ import { makeAutoObservable } from "mobx";
 
 export default class DeviceStore {
   constructor() {
-    this._types = [
-      { id: 1, name: "Пиво" },
-      { id: 2, name: "Сидр" },
-      { id: 3, name: "Лимонад" },
-      { id: 4, name: "Кока-кола" },
-      { id: 5, name: "Сок" },
-    ];
-    this._brands = [
-      { id: 1, name: "Таркос" },
-      { id: 2, name: "ColdRiver" },
-    ];
-    this._devices = [
-      {
-        id: 1,
-        name: "Секрет Пивовара",
-        rating: 5,
-        img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
-      },
-      {
-        id: 2,
-        name: "Секрет Пивовара",
-        rating: 5,
-        img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
-      },
-      {
-        id: 3,
-        name: "Секрет Пивовара",
-        rating: 5,
-        img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
-      },
-      {
-        id: 4,
-        name: "Секрет Пивовара",
-        rating: 5,
-        img: "https://shop.miratorg.ru/upload/iblock/622/RN211304.jpg",
-      },
-    ];
+    this._types = [];
+    this._brands = [];
+    this._devices = [];
     this._selectedType = {};
+    this._selectedBrand = {};
+    this._page = 1;
+    this._totalCount = 0;
+    this._limit = 3;
     makeAutoObservable(this);
   }
 
@@ -49,25 +19,47 @@ export default class DeviceStore {
   setBrands(brands) {
     this._brands = brands;
   }
-  setDevice(devices) {
+  setDevices(devices) {
     this._devices = devices;
   }
 
   setSelectedType(type) {
+    this.setPage(1);
     this._selectedType = type;
   }
+  setSelectedBrand(brand) {
+    this.setPage(1);
+    this._selectedBrand = brand;
+  }
+  setPage(page) {
+    this._page = page;
+  }
+  setTotalCount(count) {
+    this._totalCount = count;
+  }
 
-  get Types() {
+  get types() {
     return this._types;
   }
-  get Brands() {
+  get brands() {
     return this._brands;
   }
-  get Devices() {
+  get devices() {
     return this._devices;
   }
-
   get selectedType() {
     return this._selectedType;
+  }
+  get selectedBrand() {
+    return this._selectedBrand;
+  }
+  get totalCount() {
+    return this._totalCount;
+  }
+  get page() {
+    return this._page;
+  }
+  get limit() {
+    return this._limit;
   }
 }

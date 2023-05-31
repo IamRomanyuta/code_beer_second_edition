@@ -12,7 +12,11 @@ const DeviceItem = ({ device }) => {
       onClick={() => navigate(DEVICE_ROUTE + "/" + device.id)}
     >
       <div className="left-side-item">
-        <img className="main-pic" src={device.img} alt="beer" />
+        <img
+          className="main-pic"
+          src={process.env.REACT_APP_API_URL + device.img}
+          alt="beer"
+        />
       </div>
       <div className="middle-side-item">
         <h2>{device.name}</h2>

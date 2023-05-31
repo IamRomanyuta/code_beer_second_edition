@@ -14,6 +14,10 @@ import {
 
 const NavBar = observer(() => {
   const { user } = useContext(Context);
+  const logOut = () => {
+    user.setUser({});
+    user.setIsAuth(false);
+  };
   // const navigate = useNavigate();
 
   return (
@@ -28,9 +32,9 @@ const NavBar = observer(() => {
           <Link
             to={LOGIN_ROUTE}
             className="nav-links"
-            // onClick={() => {
-            //   user.setIsAuth(false);
-            // }}
+            onClick={() => {
+              logOut();
+            }}
           >
             Logout
           </Link>
@@ -46,13 +50,7 @@ const NavBar = observer(() => {
         </div>
       ) : (
         <div className="right-side-nav">
-          <Link
-            to={LOGIN_ROUTE}
-            className="nav-links"
-            // onClick={() => {
-            //   user.setIsAuth(true);
-            // }}
-          >
+          <Link to={LOGIN_ROUTE} className="nav-links">
             Auth
           </Link>
         </div>

@@ -1,0 +1,47 @@
+Client
+
+*******************
+Folder list:
+1 components
+2 http
+3 pages
+4 store
+5 styles
+6 utils
+*******************
+-------------------
+1 components:
+
+1.1 modals
+1.1.a AddBrand
+1.1.b AddCharecterics
+1.1.c AddDevice
+1.1.d AddType
+1.1.e ChangeBrand
+1.1.f ChangeCharecterics
+1.1.g ChangeDevice
+1.1.h ChangeType
+
+1.a AppRouter
+1.b DeviceItem
+1.c DeviceList
+1.d NavBar
+1.e TypeBar
+
+-------------------
+2.http:
+
+2.a index
+2.b userApi
+
+-------------------
+3.pages:
+
+3.a Admin
+3.b Auth
+3.c Basket
+3.d DevicePage
+3.e Profile
+3.f Shop
+
+Server

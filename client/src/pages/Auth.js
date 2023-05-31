@@ -42,6 +42,7 @@ const Auth = observer(() => {
           <label>email:</label>
           <input
             type="email"
+            placeholder="Enter email here..."
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -50,6 +51,7 @@ const Auth = observer(() => {
           <input
             type="password"
             name="password"
+            placeholder="Enter password here..."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -66,7 +68,7 @@ const Auth = observer(() => {
               )}
             </div>
             <div className="accept-btn-field">
-              <button className="login-btn" type="submit" onClick={click}>
+              <button className="login-btn" onClick={click}>
                 {isLogin ? "Войти" : "Регистрация"}
               </button>
             </div>

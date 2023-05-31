@@ -1,8 +1,11 @@
 import { observer } from "mobx-react-lite";
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../index";
 import "../styles/DevicePage.css";
 
 const DevicePage = observer(() => {
+  const { device } = useContext(Context);
+
   return (
     <div className="device-main-window">
       <div className="upper-side">

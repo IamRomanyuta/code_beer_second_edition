@@ -9,7 +9,7 @@ const DeviceList = observer(() => {
 
   return (
     <div className="device-list">
-      {device._devices.map((device) => (
+      {device.devices.map((device) => (
         <DeviceItem className="device" key={device.id} device={device} />
       ))}
     </div>
