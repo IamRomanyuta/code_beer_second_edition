@@ -17,6 +17,7 @@ const Shop = observer(() => {
     fetchTypes().then((data) => device.setTypes(data));
     fetchDevices()
       .then((data) => device.setDevices(data.rows))
+      .then(console.log(device.rows))
       .finally(setLoading(false));
   }, []);
 
@@ -30,7 +31,7 @@ const Shop = observer(() => {
         <TypeBar />
       </div>
       <div className="beer-showcase">
-        <DeviceList className="device-list" />
+        {device.devices && <DeviceList className="device-list" />}
       </div>
     </div>
   );

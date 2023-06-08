@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../../styles/Modal.css";
 
-const AddBrand = ({ show, onHide }) => {
+const ModalBase = ({ show, onHide, content }) => {
   const handleModalClick = () => {
     onHide(false);
   };
@@ -27,15 +27,15 @@ const AddBrand = ({ show, onHide }) => {
         <button className="close-button" onClick={handleCloseClick}>
           X
         </button>
-        jeronimo1
+        {content}
       </div>
     </div>
   );
 };
 
-AddBrand.propTypes = {
+ModalBase.propTypes = {
   show: PropTypes.bool.isRequired,
   onHide: PropTypes.func.isRequired,
 };
 
-export default AddBrand;
+export default ModalBase;
