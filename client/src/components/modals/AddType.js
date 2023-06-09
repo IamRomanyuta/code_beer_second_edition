@@ -1,19 +1,7 @@
 import React from "react";
 
-const AddType = ({ show, onHide }) => {
-  return (
-    <div
-      className={show ? "main-modal active" : "main-modal"}
-      onClick={() => onHide(false)}
-    >
-      <div
-        className={show ? "content-part active" : "content-part"}
-        onClick={(e) => e.stopPropagation()}
-      >
-        jeronimo4
-      </div>
-    </div>
-  );
+const AddType = () => {
+  return <div>jeronimo4</div>;
 };
 
 export default AddType;

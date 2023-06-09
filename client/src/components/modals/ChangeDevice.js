@@ -1,19 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../index";
 
-const ChangeDevice = ({ show, onHide }) => {
-  return (
-    <div
-      className={show ? "main-modal active" : "main-modal"}
-      onClick={() => onHide(false)}
-    >
-      <div
-        className={show ? "content-part active" : "content-part"}
-        onClick={(e) => e.stopPropagation()}
-      >
-        jeronimo7
-      </div>
-    </div>
-  );
+const ChangeDevice = () => {
+  const { device } = useContext(Context);
+  return <div></div>;
 };
 
 export default ChangeDevice;
