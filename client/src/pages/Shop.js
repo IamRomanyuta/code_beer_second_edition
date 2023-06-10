@@ -24,7 +24,7 @@ const Shop = observer(() => {
   if (loading) {
     return <Spinner animation={"grow"} />;
   }
-
+  console.log(device.devices);
   return (
     <div className="shop-main-window">
       <div className="left-side-menu">

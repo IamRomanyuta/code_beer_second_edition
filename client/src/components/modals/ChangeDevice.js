@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
-import { Context } from "../../index";
+import React from "react";
 
 const ChangeDevice = () => {
-  const { device } = useContext(Context);
   return <div></div>;
 };
 

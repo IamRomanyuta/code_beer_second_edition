@@ -7,6 +7,7 @@ import "../styles/DeviceList.css";
 const DeviceList = observer(() => {
   const { device } = useContext(Context);
 
+  console.log(device);
   return (
     <div className="device-list">
       {device.devices.map((device) => (

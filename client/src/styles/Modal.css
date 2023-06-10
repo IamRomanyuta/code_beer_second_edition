@@ -29,6 +29,7 @@
   color: black;
   border-radius: 10px;
   width: 50vw;
+  height: 500px;
   transform: scale(0.5);
   transition: 0.4s all;
 }
