@@ -7,25 +7,29 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  margin: 10px;
 }
 
 .dropdown-toggle {
   background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  border: 5px solid #000;
+  border-radius: 10px;
   padding: 8px 16px;
   cursor: pointer;
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
   list-style: none;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 2px solid #000;
   padding: 8px 0;
   margin-top: 4px;
   width: 200px;
+}
+
+ul.dropdown-menu {
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-menu li {

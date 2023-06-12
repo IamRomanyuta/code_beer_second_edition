@@ -17,7 +17,6 @@ const Shop = observer(() => {
     fetchTypes().then((data) => device.setTypes(data));
     fetchDevices()
       .then((data) => device.setDevices(data.rows))
-      .then(console.log(device.rows))
       .finally(setLoading(false));
   }, []);
 
