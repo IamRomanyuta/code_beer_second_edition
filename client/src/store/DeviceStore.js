@@ -9,7 +9,7 @@ export default class DeviceStore {
     this._selectedBrand = {};
     this._page = 1;
     this._totalCount = 0;
-    this._limit = 3;
+    this._deviceLimit = 9;
     makeAutoObservable(this);
   }
 
@@ -59,7 +59,7 @@ export default class DeviceStore {
   get page() {
     return this._page;
   }
-  get limit() {
-    return this._limit;
+  get deviceLimit() {
+    return this._deviceLimit;
   }
 }

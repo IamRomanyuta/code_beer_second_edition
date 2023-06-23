@@ -13,3 +13,26 @@
 .dropdown-menu {
   margin: 10px;
 }
+
+.name-string {
+  margin: 10px;
+  padding-left: 3px;
+  border: 5px solid #000;
+  border-radius: 10px;
+}
+
+.file-upload-button {
+  margin: 10px;
+  border: 5px solid #000;
+  border-radius: 10px;
+}
+
+.confirm-button {
+  margin: 10px;
+  border: 5px solid #000;
+  border-radius: 10px;
+}
+
+.confirm-string {
+  color: green;
+}

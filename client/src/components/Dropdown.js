@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/Dropdown.css";
 
-const Dropdown = ({ buttonString, array }) => {
+const Dropdown = ({ buttonString, array, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [listName, setListName] = useState(buttonString);
   const dropdownRef = useRef(null);
@@ -10,9 +10,10 @@ const Dropdown = ({ buttonString, array }) => {
     setIsOpen(!isOpen);
   };
 
-  const handleItemClick = (name) => {
-    setListName(name);
+  const handleItemClick = (element) => {
+    setListName(element.name);
     setIsOpen(false);
+    onChange(element.id);
   };
 
   const handleClickOutside = (event) => {
@@ -39,7 +40,7 @@ const Dropdown = ({ buttonString, array }) => {
             <li
               className="element"
               key={element.id}
-              onClick={() => handleItemClick(element.name)}
+              onClick={() => handleItemClick(element)}
             >
               {element.name}
             </li>

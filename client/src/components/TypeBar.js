@@ -6,15 +6,22 @@ import { Context } from "../index";
 const TypeBar = observer(() => {
   const { device } = useContext(Context);
 
+  const handleClick = (type) => {
+    if (type.id === device.selectedType?.id) {
+      device.setSelectedType({});
+    } else {
+      device.setSelectedType(type);
+    }
+  };
+
   return (
     <ul className="type-list">
-      {device._types.map((type) => (
+      {device.types.map((type) => (
         <li
-          className="list-item"
-          active={type.id === device.selectedType.id}
-          onClick={() => {
-            device.setSelectedType(type.id);
-          }}
+          className={`list-item ${
+            type.id === device.selectedType?.id ? "active" : ""
+          }`}
+          onClick={() => handleClick(type)}
           key={type.id}
         >
           {type.name}

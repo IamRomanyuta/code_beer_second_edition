@@ -36,28 +36,35 @@ class DeviceController {
       next(ApiError.badRequest(e.message));
     }
   }
+
   async getAll(req, res) {
-    let { brandId, typeId, limit, page } = req.query;
-    limit = limit || 9;
+    let { brandId, typeId, deviceLimit, page } = req.query;
+    deviceLimit = deviceLimit || 9;
     page = page || 1;
-    let offset = page * limit - limit;
+    let offset = page * deviceLimit - deviceLimit;
     let devices;
     if (!brandId && !typeId) {
-      devices = await Device.findAndCountAll({ limit, offset });
+      devices = await Device.findAndCountAll({ limit: deviceLimit, offset });
     }
     if (brandId && !typeId) {
       devices = await Device.findAndCountAll({
-        where: { brandId, limit, offset },
+        where: { brandId },
+        limit: deviceLimit,
+        offset,
       });
     }
     if (!brandId && typeId) {
       devices = await Device.findAndCountAll({
-        where: { typeId, limit, offset },
+        where: { typeId },
+        limit: deviceLimit,
+        offset,
       });
     }
     if (brandId && typeId) {
       devices = await Device.findAndCountAll({
-        where: { brandId, typeId, limit, offset },
+        where: { brandId, typeId },
+        limit: deviceLimit,
+        offset,
       });
     }
     return res.json({ devices });
