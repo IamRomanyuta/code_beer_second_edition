@@ -29,7 +29,8 @@
   color: black;
   border-radius: 10px;
   width: 50vw;
-  height: 500px;
+  height: 70vh; /* Добавленная высота контента */
+  overflow: auto; /* Добавлено свойство прокрутки */
   transform: scale(0.5);
   transition: 0.4s all;
 }

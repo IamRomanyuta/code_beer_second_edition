@@ -38,6 +38,26 @@ export const fetchDevices = async (typeId, brandId, page, deviceLimit = 9) => {
 };
 
 export const fetchOneDevice = async (id) => {
-  const { data } = await $host.get("api/device/" + id);
+  const { data } = await $host.get(`api/device/${id}`);
   return data;
+};
+
+export const fetchDescription = async (deviceId) => {
+  try {
+    const { data } = await $host.get(`api/description/${deviceId}`);
+    return data;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch description");
+  }
+};
+
+export const fetchDeviceInfo = async (deviceId) => {
+  try {
+    const { data } = await $host.get(`api/device-info/${deviceId}`);
+    return data;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch device info");
+  }
 };

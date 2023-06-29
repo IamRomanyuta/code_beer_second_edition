@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/DeviceItem.css";
 import { useNavigate } from "react-router-dom";
 import { DEVICE_ROUTE } from "../utils/consts";
+import { fetchDescription, fetchDeviceInfo } from "../http/deviceAPI";
 
 const DeviceItem = ({ device }) => {
   const navigate = useNavigate();
+  const [description, setDescription] = useState([]);
+  const [deviceInfo, setDeviceInfo] = useState([]);
+
+  useEffect(() => {
+    fetchDescription(device.id)
+      .then((data) => setDescription(data.description))
+      .catch((error) => {
+        console.log(error);
+        setDescription(""); // Установить пустую строку в случае ошибки
+      });
+  }, []);
+
+  useEffect(() => {
+    fetchDeviceInfo(device.id)
+      .then((data) => setDeviceInfo(data))
+      .catch((error) => {
+        console.log(error);
+        setDeviceInfo([]);
+      });
+  }, []);
 
   return (
     <div
@@ -20,14 +41,16 @@ const DeviceItem = ({ device }) => {
       </div>
       <div className="middle-side-item">
         <h2>{device.name}</h2>
-        <p>
-          «Секрет Пивовара» - это 100% солодовое пиво в немецком стиле варится
-          по классической немецкой технологии в соответствии с «Законом о
-          чистоте пива», изданном в Баварии ещё в 1516 году.
-        </p>
+        <p>{description}</p>
       </div>
       <div className="right-side-item">
-        <div className="sort">Pilsner</div>
+        <div className="charecteristics">Характеристики</div>
+        {deviceInfo.map((info, index) => (
+          <div className="info" key={index}>
+            <div className="title">{info.title}:</div>
+            <div className="description">{info.description}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

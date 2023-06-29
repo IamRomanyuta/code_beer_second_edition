@@ -32,7 +32,18 @@
   border: 5px solid #000;
   border-radius: 10px;
 }
+.delete-info-button {
+  margin: 10px;
+  padding: 0 5px;
+  border: 5px solid #000;
+  border-radius: 10px;
+}
 
 .confirm-string {
   color: green;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
 }

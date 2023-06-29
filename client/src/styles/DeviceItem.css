@@ -21,12 +21,19 @@
 }
 .right-side-item {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 20%;
 }
 
-.sort {
+.charecteristics {
   font-size: 25px;
+  font-weight: 500;
+}
+.title {
+  margin: 5px;
+}
+.description {
+  margin: 5px;
 }
 .main-pic {
   width: 200px;
