@@ -19,6 +19,16 @@
 
 ## Технологии:
 
+<img src="https://img.shields.io/badge/Javascript-yellow?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/NodeJS-grey?style=for-the-badge&logo=nodedotjs"/>
+<img src="https://img.shields.io/badge/React-black?style=for-the-badge&logo=react&logoColor=61DBFB"/>
+<img src="https://img.shields.io/badge/Postgre Sql-696969?style=for-the-badge&logo=postgresql"/>
+<img src="https://img.shields.io/badge/Axios-2F4F4F?style=for-the-badge&logo=axios"/>
+<img src="https://img.shields.io/badge/MobX-2F4F4F?style=for-the-badge&logo=mobx"/>
+<img src="https://img.shields.io/badge/Express-2F4F4F?style=for-the-badge&logo=express"/>
+<img src="https://img.shields.io/badge/sequelize-2F4F4F?style=for-the-badge&logo=sequelize"/>
+<img src="https://img.shields.io/badge/Bootstrap-2F4F4F?style=for-the-badge&logo=bootstrap"/>
+
 ---
 
 ## Основные страницы:
