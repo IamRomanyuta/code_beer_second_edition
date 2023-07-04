@@ -25,19 +25,19 @@
 
 ### Главная страница:
 
-![MainPage](documentation\pictures\MainPageScreen.JPG)
+![MainPage](documentation/pictures/MainPageScreen.JPG)
 Главная страница представляет из себя ветрину с пагинацией и активными кнопками с помощью которых можно можно выбирать определенный вид напитка и его производителя
-![ActiveButtuns](documentation\pictures\TypeBrandsButtons.JPG)
+![ActiveButtuns](documentation/pictures/TypeBrandsButtons.JPG)
 
 ### Страница Администратора:
 
-![AdminPage](documentation\pictures\AdminPageScreen.JPG)
+![AdminPage](documentation/pictures/AdminPageScreen.JPG)
 Страница администратора представлена в виде набора кнопок с модальными окнами через которые можно управлять добавлением/изменением существующих напитков/их видов/производителей
-![ModalWindow](documentation\pictures\ModalWindowScreen.JPG)
+![ModalWindow](documentation/pictures/ModalWindowScreen.JPG)
 
 ### Страница логина/регистрации:
 
-## ![LoginPage](documentation\pictures\LoginPageScreen.JPG)
+## ![LoginPage](documentation/pictures/LoginPageScreen.JPG)
 
 На данном этапе реализована базовая версия входа/регистрации с хэшированием пороля. В дальнейшем планируется добавить аутентификацию через Google/Facebook/Vk и пр.
 
