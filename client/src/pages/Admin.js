@@ -31,12 +31,6 @@ const Admin = () => {
         </button>
         <button
           className="main-button"
-          onClick={() => openModal(<AddCharecteristic />)}
-        >
-          Add Charecteristic
-        </button>
-        <button
-          className="main-button"
           onClick={() => openModal(<AddDevice />)}
         >
           Add Device
@@ -51,12 +45,6 @@ const Admin = () => {
           onClick={() => openModal(<ChangeBrand />)}
         >
           Change Brand
-        </button>
-        <button
-          className="main-button"
-          onClick={() => openModal(<ChangeCharecteristic />)}
-        >
-          Change Charecteristic
         </button>
         <button
           className="main-button"
