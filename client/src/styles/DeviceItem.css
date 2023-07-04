@@ -22,6 +22,7 @@
 .right-side-item {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
   width: 20%;
 }
 
