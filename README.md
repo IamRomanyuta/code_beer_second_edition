@@ -39,11 +39,20 @@
 
 ### Страница логина/регистрации:
 
-## ![LoginPage](documentation/pictures/LoginPageScreen.JPG)
+![LoginPage](documentation/pictures/LoginPageScreen.JPG)
 
 На данном этапе реализована базовая версия входа/регистрации с хэшированием пороля. В дальнейшем планируется добавить аутентификацию через Google/Facebook/Vk и пр.
 
+---
+
 ## Карта развития:
+
+1. :white_large_square: Сделать мобильную версию сайта
+2. :white_large_square: Улучшить визуальную составляющую сайта
+3. :white_large_square: Сделать современную форму решистрации через Google и соцсети
+4. :white_large_square: Создать раздел Избранное(basket)
+5. :white_large_square: Создать систему отзывов
+6. :white_large_square: Создать профиль пользователя с отображением его предпочтений/отзывов оставленных на сайте
 
 ---
 
